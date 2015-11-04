@@ -5,7 +5,7 @@
 # Configuration 
 #--------------------------------------------------------------------------------------------------------------------------------
 
-BOARD="bananapi"						# bananapi
+BOARD="bananapipro"						# bananapi
 BRANCH="default"						# default=3.4.x, mainline=next
 RELEASE="wheezy"                                   		# jessie, wheezy or trusty
 
