@@ -21,10 +21,10 @@ USEALLCORES="yes"                           			# Use all CPU cores for compiling
 
 # user 
 DEST_LANG="en_US.UTF-8"                     			# sl_SI.UTF-8, en_US.UTF-8
-TZDATA="Europe/Ljubljana"               			# Timezone
-ROOTPWD="1234"                              			# Must be changed @first login
-MAINTAINER="Igor Pecovnik"                  			# deb signature
-MAINTAINERMAIL="igor.pecovnik@****l.com"    			# deb signature
+TZDATA="Europe/Zurich"               			# Timezone
+ROOTPWD="toor"                              			# Must be changed @first login
+MAINTAINER="Simon Pascal Baur"                  			# deb signature
+MAINTAINERMAIL="sbausis@gmx.net"    			# deb signature
 
 # advanced
 FBTFT="no"                                 			# https://github.com/notro/fbtft 
@@ -39,13 +39,13 @@ SRC=$(pwd)
 DEST=$(pwd)/output
 
 # get updates of the main build libraries
-if [ -d "$SRC/lib" ]; then
-    cd $SRC/lib
-    git pull 
-else
-    # download SDK
-    git clone https://github.com/igorpecovnik/lib
-fi
+#if [ -d "$SRC/lib" ]; then
+#    cd $SRC/lib
+#    git pull 
+#else
+#    # download SDK
+#    git clone https://github.com/igorpecovnik/lib
+#fi
 
 source $SRC/lib/main.sh
 #--------------------------------------------------------------------------------------------------------------------------------
