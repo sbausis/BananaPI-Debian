@@ -38,6 +38,9 @@ SRC=$(pwd)
 # destination
 DEST=$(pwd)/output
 
+# sources download
+SOURCES=$(pwd)/sources
+
 # get updates of the main build libraries
 #if [ -d "$SRC/lib" ]; then
 #    cd $SRC/lib
